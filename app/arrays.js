@@ -67,7 +67,17 @@ exports.arraysAnswers = {
     return result;
   },
 
-  square: function(arr) {},
+  square: function(arr) {
+    squared = [];
 
-  findAllOccurrences: function(arr, target) {}
+    for (let i = 0, len = arr.length; i < len; i++) {
+      squared.push(arr[i] * arr[i]);
+    }
+
+    return squared;
+  },
+
+  findAllOccurrences: function(arr, target) {
+    return arr.filter(target => target);
+  }
 };
